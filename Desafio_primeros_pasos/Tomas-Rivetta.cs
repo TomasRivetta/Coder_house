@@ -6,7 +6,7 @@ namespace PrimerosPasos
         {
         }
     }
-
+    
     public class Usuario
     {
         public int id;
