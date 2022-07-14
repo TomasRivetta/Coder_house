@@ -6,7 +6,7 @@ namespace PrimerosPasos
         {
         }
     }
-    
+
     public class Usuario
     {
         public int id;
@@ -39,18 +39,18 @@ namespace PrimerosPasos
 
     class ProductoVendido
     {
-        public int id;
+        private int id;
 
         private int idProducto;
 
-        public int stock;
+        private int stock;
 
-        private int idVenta;
+        public int idVenta;
     }
 
     class Venta
     {
-        public int id;
+        private int id;
 
         private string comentarios;
     }
