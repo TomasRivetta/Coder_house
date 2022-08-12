@@ -1,0 +1,102 @@
+--ACTIVIDADES CLASE 10
+
+--1 Primera Consulta
+--Deberás realizar una consulta que traiga los datos del 
+--usuario que tiene como nombre de usuario tcasazza
+
+SELECT * FROM Usuario WHERE NombreUsuario = 'tcasazza'
+
+
+--2. Consulta con condiciones
+--Deberás realizar una consulta que busque un usuario y una 
+--contraseña específica; si los 2 no coinciden que no traiga nada.
+--Probar un caso poniendo ambos campos bien y probar 
+--poniendo un caso mal.
+
+--EXISTE
+SELECT Nombre,Contraseña FROM Usuario WHERE Nombre = 'Ernesto' and Contraseña = 'SoyErnestoPerez'
+--NO EXISTE
+SELECT Nombre,Contraseña FROM Usuario WHERE Nombre = 'Ernesto' and Contraseña = 'ContraseñaInexistente'
+
+
+--3. Consulta a Productos
+--Deberás realizar una consulta que traiga todos los 
+--productos cargados por el usuario que tiene ID = 1
+
+SELECT * FROM Producto WHERE IdUsuario = 1
+
+
+--4. Nuevo usuario
+--Deberás realizar un Insert que inserte un nuevo usuario 
+--con todos sus datos.
+
+INSERT INTO Usuario(Nombre,Apellido,NombreUsuario,Contraseña,Mail)
+	VALUES ('Tomas','Rivetta','trivetta','SoyTomasRivetta','tomasrivetta@gmail.com')
+
+
+--5. Nuevo producto
+--Deberás realizar un Insert que inserte un producto nuevo a su tabla
+
+INSERT INTO Producto(Descripciones,Costo,PrecioVenta,Stock,IdUsuario)
+	VALUES('Campera Parka',250000,300000,5,1)
+
+
+--ACTIVIDADES CLASE 11
+
+--1. Modificar un usuario
+--Deberás cambiar la contraseña del usuario Tobias
+
+UPDATE Usuario 
+SET Contraseña = 'ContraseñaNueva'
+WHERE Nombre = 'Tobias'
+
+
+--2. Eliminar un usuario
+--Deberás eliminar el usuario con apellido Perez
+
+DELETE FROM Usuario WHERE Apellido = 'Perez'
+
+
+--3. Modificar un producto
+--Deberás poner en 0 el stock de los buzos en la tabla producto
+
+UPDATE Producto
+SET Stock = 0
+WHERE Descripciones = 'Buzo'
+
+
+--4. Eliminar un producto
+--Deberás eliminar el producto “Musculosa”
+
+DELETE FROM Producto WHERE Descripciones = 'Musculosa'
+
+
+--5. Consulta con join
+--Obtener los nombres de usuarios que cargaron los productos.
+
+SELECT DISTINCT
+	Usuario.Nombre
+FROM Usuario
+INNER JOIN Producto
+	ON Usuario.Id = Producto.IdUsuario
+
+
+--DESAFIO ENTREGABLE
+
+--1. Obtener todos los productos vendidos
+
+SELECT * FROM ProductoVendido
+
+
+--2. Obtener ventas mayores a 10000 de los productos que terminen con “ina”
+
+SELECT * FROM Producto WHERE PrecioVenta > 10000 and Descripciones like '%ina'
+
+
+--3. Insertar el producto “Aceite de Girasol Cocinera” 
+--con precio de venta de 500.00, 
+--de costo de 350.00 y 20 de stock.
+
+INSERT INTO Producto(Descripciones,Costo,PrecioVenta,Stock,IdUsuario)
+	VALUES('Aceite de Girasol Cocinera',350.00,500.00,20,1)
+
