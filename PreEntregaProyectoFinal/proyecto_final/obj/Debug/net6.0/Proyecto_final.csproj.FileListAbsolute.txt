@@ -1,0 +1,44 @@
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\Proyecto_final.csproj.AssemblyReference.cache
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\Proyecto_final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\Proyecto_final.AssemblyInfoInputs.cache
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\Proyecto_final.AssemblyInfo.cs
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\Proyecto_final.csproj.CoreCompileInputs.cache
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\Proyecto_final.exe
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\Proyecto_final.deps.json
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\Proyecto_final.runtimeconfig.json
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\Proyecto_final.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\Proyecto_final.pdb
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\Proyecto_final.csproj.CopyComplete
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\Proyecto_final.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\refint\Proyecto_final.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\Proyecto_final.pdb
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\Proyecto_final.genruntimeconfig.cache
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\proyecto_final - copia\obj\Debug\net6.0\ref\Proyecto_final.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\Proyecto_final.exe
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\Proyecto_final.deps.json
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\Proyecto_final.runtimeconfig.json
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\Proyecto_final.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\Proyecto_final.pdb
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\runtimes\win-arm64\native\sni.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\runtimes\win-x64\native\sni.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\runtimes\win-x86\native\sni.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\runtimes\unix\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\bin\Debug\net6.0\runtimes\win\lib\netcoreapp2.1\System.Data.SqlClient.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\Proyecto_final.csproj.AssemblyReference.cache
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\Proyecto_final.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\Proyecto_final.AssemblyInfoInputs.cache
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\Proyecto_final.AssemblyInfo.cs
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\Proyecto_final.csproj.CoreCompileInputs.cache
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\Proyecto_final.csproj.CopyComplete
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\Proyecto_final.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\refint\Proyecto_final.dll
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\Proyecto_final.pdb
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\Proyecto_final.genruntimeconfig.cache
+C:\Users\CESAR\Desktop\CODER HOUSE\c#\desafios_c#\PreEntregaProyectoFinal\proyecto_final\obj\Debug\net6.0\ref\Proyecto_final.dll
