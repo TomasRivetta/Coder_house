@@ -56,9 +56,9 @@ namespace IntegrandoApisConAdoNet.Repository
             bool resultado = false;
             using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
             {
-                string queryInsert = "INSERT INTO [SistemaGestion].[dbo].[Producto] " +
+                string queryInsert = "IF NOT EXISTS(SELECT * FROM Producto WHERE Descripciones = @descripcionesParameter) BEGIN INSERT INTO [SistemaGestion].[dbo].[Producto] " +
                     "(Descripciones,Costo,PrecioVenta,Stock,IdUsuario) VALUES " +
-                    "(@descripcionesParameter, @costoParameter, @precioVentaParameter, @stockParameter, @idUsuarioParameter);";
+                    "(@descripcionesParameter, @costoParameter, @precioVentaParameter, @stockParameter, @idUsuarioParameter) END;";
 
                 SqlParameter descripcionesParameter = new SqlParameter("descripcionesParameter", SqlDbType.VarChar) { Value = producto.Descripciones };
                 SqlParameter costoParameter = new SqlParameter("costoParameter", SqlDbType.BigInt) { Value = producto.Costo };

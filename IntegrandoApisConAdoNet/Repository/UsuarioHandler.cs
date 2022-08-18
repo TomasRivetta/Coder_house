@@ -80,9 +80,11 @@ namespace IntegrandoApisConAdoNet.Repository
             bool resultado = false;
             using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
             {
-                string queryInsert = "INSERT INTO [SistemaGestion].[dbo].[Usuario] " +
+                string queryInsert = "IF NOT EXISTS(SELECT * FROM Usuario " +
+                    "WHERE Nombre = @nombreParameter OR NombreUsuario = @nombreUsuarioParameter OR Mail = @mailParameter) " +
+                    "BEGIN INSERT INTO [SistemaGestion].[dbo].[Usuario] " +
                     "(Nombre, Apellido, NombreUsuario, Contraseña, Mail) VALUES " +
-                    "(@nombreParameter, @apellidoParameter, @nombreUsuarioParameter, @contraseñaParameter, @mailParameter);";
+                    "(@nombreParameter, @apellidoParameter, @nombreUsuarioParameter, @contraseñaParameter, @mailParameter) END;";
 
                 SqlParameter nombreParameter = new SqlParameter("nombreParameter", SqlDbType.VarChar) { Value = usuario.Nombre };
                 SqlParameter apellidoParameter = new SqlParameter("apellidoParameter", SqlDbType.VarChar) { Value = usuario.Apellido };
