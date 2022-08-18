@@ -8,6 +8,44 @@ namespace IntegrandoApisConAdoNet.Repository
     {
         public const string ConnectionString = "Server=PCCESAR;DataBase=SistemaGestion;Trusted_Connection=True";
 
+        //Traer Ventas
+        public static List<Venta> GetVentas()
+        {
+
+            List<Venta> ventas = new List<Venta>();
+
+            using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
+            {
+                using (SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Venta", sqlConnection))
+                {
+                    sqlConnection.Open();
+
+                    using (SqlDataReader dataReader = sqlCommand.ExecuteReader())
+                    {
+
+                        if (dataReader.HasRows)
+                        {
+                            while (dataReader.Read())
+                            {
+
+                                Venta venta = new Venta();
+
+                                venta.Id = Convert.ToInt32(dataReader["Id"]);
+                                venta.Comentarios = dataReader["Comentarios"].ToString();
+                                venta.IdUsuario = Convert.ToInt32(dataReader["IdUsuario"]);
+
+                                ventas.Add(venta);
+                            }
+                        }
+                    }
+                }
+            }
+
+            return ventas;
+            
+        }
+
+
         //Cargar Venta
         public static bool CargarVenta(Venta venta)
         {
@@ -42,6 +80,7 @@ namespace IntegrandoApisConAdoNet.Repository
 
             using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
             {
+                
                 string queryInsert2 = "UPDATE Producto SET Stock = Stock -1 WHERE Descripciones = @comentariosParameter";
 
                 SqlParameter comentariosParameter = new SqlParameter("comentariosParameter", SqlDbType.VarChar) { Value = venta.Comentarios };

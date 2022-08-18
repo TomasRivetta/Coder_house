@@ -11,6 +11,13 @@ namespace IntegrandoApisConAdoNet.Controllers
     public class VentaController : ControllerBase
     {
 
+        //Traer Venta
+        [HttpGet]
+        public List<Venta> GetVentas()
+        {
+            return VentaHandler.GetVentas();
+        }
+
         //Cargar Venta
         [HttpPost]
         public bool CargarVenta([FromBody] PostVenta venta)
@@ -27,8 +34,8 @@ namespace IntegrandoApisConAdoNet.Controllers
             }
             catch (Exception ex)
             {
-                return false;
                 Console.WriteLine(ex.Message);
+                return false;
             }
         }
 

@@ -15,33 +15,28 @@ namespace IntegrandoApisConAdoNet.Repository
 
             using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
             {
-                using (SqlCommand sqlCommand = new SqlCommand())
+                using (SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Producto", sqlConnection))
                 {
-                    sqlCommand.Connection = sqlConnection;
 
                     sqlCommand.Connection.Open();
 
-                    sqlCommand.CommandText = "SELECT * FROM Producto";
-
-                    SqlDataAdapter sqlDataAdapter = new SqlDataAdapter();
-
-                    sqlDataAdapter.SelectCommand = sqlCommand;
-
-                    DataTable table = new DataTable();
-                    sqlDataAdapter.Fill(table);
-                    sqlCommand.Connection.Close();
-
-                    foreach (DataRow row in table.Rows)
+                    using (SqlDataReader dataReader = sqlCommand.ExecuteReader())
                     {
-                        Producto producto = new Producto();
-                        producto.Id = Convert.ToInt32(row["Id"]);
-                        producto.Stock = Convert.ToInt32(row["Stock"]);
-                        producto.IdUsuario = Convert.ToInt32(row["IdUsuario"]);
-                        producto.Costo = Convert.ToInt32(row["Costo"]);
-                        producto.PrecioVenta = Convert.ToInt32(row["PrecioVenta"]);
-                        producto.Descripciones = row["Descripciones"].ToString();
+                        if (dataReader.HasRows)
+                        {
+                            while (dataReader.Read())
+                            {
+                                Producto producto = new Producto();
+                                producto.Id = Convert.ToInt32(dataReader["Id"]);
+                                producto.Stock = Convert.ToInt32(dataReader["Stock"]);
+                                producto.IdUsuario = Convert.ToInt32(dataReader["IdUsuario"]);
+                                producto.Costo = Convert.ToInt32(dataReader["Costo"]);
+                                producto.PrecioVenta = Convert.ToInt32(dataReader["PrecioVenta"]);
+                                producto.Descripciones = dataReader["Descripciones"].ToString();
 
-                        resultados.Add(producto);
+                                resultados.Add(producto);
+                            }
+                        }
                     }
                 }
             }

@@ -36,8 +36,8 @@ namespace IntegrandoApisConAdoNet.Controllers
             }
             catch (Exception ex)
             {
-                return false;
                 Console.WriteLine(ex.Message);
+                return false;
             }
         }
 
