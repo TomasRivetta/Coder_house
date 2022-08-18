@@ -8,6 +8,7 @@ namespace IntegrandoApisConAdoNet.Repository
     {
         public const string ConnectionString = "Server=PCCESAR;DataBase=SistemaGestion;Trusted_Connection=True";
 
+        //Cargar Venta
         public static bool CargarVenta(Venta venta)
         {
             bool resultado = false;
@@ -19,7 +20,6 @@ namespace IntegrandoApisConAdoNet.Repository
 
                 SqlParameter comentariosParameter = new SqlParameter("comentariosParameter", SqlDbType.VarChar) { Value = venta.Comentarios };
                 SqlParameter idUsuarioParameter = new SqlParameter("idUsuarioParameter", SqlDbType.BigInt) { Value = venta.IdUsuario };
-
 
                 sqlConnection.Open();
 
@@ -36,10 +36,34 @@ namespace IntegrandoApisConAdoNet.Repository
                     }
 
                 }
-
                 sqlConnection.Close();
 
             }
+
+            using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
+            {
+                string queryInsert2 = "UPDATE Producto SET Stock = Stock -1 WHERE Descripciones = @comentariosParameter";
+
+                SqlParameter comentariosParameter = new SqlParameter("comentariosParameter", SqlDbType.VarChar) { Value = venta.Comentarios };
+
+                sqlConnection.Open();
+
+                using (SqlCommand sqlCommand = new SqlCommand(queryInsert2, sqlConnection))
+                {
+                    sqlCommand.Parameters.Add(comentariosParameter);
+
+                    int numberOfRows = sqlCommand.ExecuteNonQuery();
+
+                    if (numberOfRows > 0)
+                    {
+                        resultado = true;
+                    }
+
+                }
+
+                sqlConnection.Close();
+            }
+
             return resultado;
         }
 

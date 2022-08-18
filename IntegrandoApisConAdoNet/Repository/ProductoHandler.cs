@@ -142,18 +142,37 @@ namespace IntegrandoApisConAdoNet.Repository
             bool resultado = false;
             using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
             {
+                string queryDelete = "DELETE FROM ProductoVendido WHERE IdProducto = @idParameter"; 
 
-                string queryDelete = "DELETE FROM Producto WHERE Id = @id";
-
-                SqlParameter sqlParameter = new SqlParameter("id", System.Data.SqlDbType.BigInt);
-                sqlParameter.Value = id;
+                SqlParameter idParameter = new SqlParameter("idParameter", SqlDbType.BigInt) {Value = id };
 
                 sqlConnection.Open();
 
                 using (SqlCommand sqlCommand = new SqlCommand(queryDelete, sqlConnection))
                 {
+                    sqlCommand.Parameters.Add(idParameter);
+                    int numberOfRows = sqlCommand.ExecuteNonQuery();
+                    if (numberOfRows > 0)
+                    {
+                        resultado = true;
+                    }
+                }
 
-                    sqlCommand.Parameters.Add(sqlParameter);
+                sqlConnection.Close();
+            }
+
+            using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
+            {
+                string queryDelete2 = "DELETE FROM Producto WHERE Id = @idParameter";
+
+                SqlParameter idParameter = new SqlParameter("idParameter", SqlDbType.BigInt) { Value = id };
+
+
+                sqlConnection.Open();
+
+                using (SqlCommand sqlCommand = new SqlCommand(queryDelete2, sqlConnection))
+                {
+                    sqlCommand.Parameters.Add(idParameter);
                     int numberOfRows = sqlCommand.ExecuteNonQuery();
                     if (numberOfRows > 0)
                     {
@@ -163,7 +182,6 @@ namespace IntegrandoApisConAdoNet.Repository
                 }
 
                 sqlConnection.Close();
-                               
             }
 
             return resultado;

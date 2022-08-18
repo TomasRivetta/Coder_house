@@ -115,7 +115,7 @@ namespace IntegrandoApisConAdoNet.Repository
             return resultado;
         }
 
-
+        //Modificar Usuario
         public static bool ModificarUsuario(Usuario usuario)
         {
             bool resultado = false;
