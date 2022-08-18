@@ -38,6 +38,7 @@ namespace IntegrandoApisConAdoNet.Repository
                             }
                         }
                     }
+                    sqlConnection.Close();
                 }
             }
 

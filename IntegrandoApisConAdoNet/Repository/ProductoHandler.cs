@@ -18,7 +18,7 @@ namespace IntegrandoApisConAdoNet.Repository
                 using (SqlCommand sqlCommand = new SqlCommand("SELECT * FROM Producto", sqlConnection))
                 {
 
-                    sqlCommand.Connection.Open();
+                    sqlConnection.Open();
 
                     using (SqlDataReader dataReader = sqlCommand.ExecuteReader())
                     {
@@ -38,6 +38,7 @@ namespace IntegrandoApisConAdoNet.Repository
                             }
                         }
                     }
+                    sqlConnection.Close();
                 }
             }
 
