@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\CESAR\\Desktop\\GITHUB\\Coder_house\\IntegrandoApisConAdoNet\\IntegrandoApisConAdoNet.csproj": {}
+    "C:\\Users\\CESAR\\Desktop\\IntegrandoApisConAdoNet\\IntegrandoApisConAdoNet.csproj": {}
   },
   "projects": {
-    "C:\\Users\\CESAR\\Desktop\\GITHUB\\Coder_house\\IntegrandoApisConAdoNet\\IntegrandoApisConAdoNet.csproj": {
+    "C:\\Users\\CESAR\\Desktop\\IntegrandoApisConAdoNet\\IntegrandoApisConAdoNet.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\GITHUB\\Coder_house\\IntegrandoApisConAdoNet\\IntegrandoApisConAdoNet.csproj",
+        "projectUniqueName": "C:\\Users\\CESAR\\Desktop\\IntegrandoApisConAdoNet\\IntegrandoApisConAdoNet.csproj",
         "projectName": "IntegrandoApisConAdoNet",
-        "projectPath": "C:\\Users\\CESAR\\Desktop\\GITHUB\\Coder_house\\IntegrandoApisConAdoNet\\IntegrandoApisConAdoNet.csproj",
+        "projectPath": "C:\\Users\\CESAR\\Desktop\\IntegrandoApisConAdoNet\\IntegrandoApisConAdoNet.csproj",
         "packagesPath": "C:\\Users\\CESAR\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\CESAR\\Desktop\\GITHUB\\Coder_house\\IntegrandoApisConAdoNet\\obj\\",
+        "outputPath": "C:\\Users\\CESAR\\Desktop\\IntegrandoApisConAdoNet\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\CESAR\\AppData\\Roaming\\NuGet\\NuGet.Config",

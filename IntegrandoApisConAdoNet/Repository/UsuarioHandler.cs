@@ -76,9 +76,9 @@ namespace IntegrandoApisConAdoNet.Repository
         }
 
         //Crear Usuario
-        public static bool CrearUsuario(Usuario usuario)
+        public static string CrearUsuario(Usuario usuario)
         {
-            bool resultado = false;
+            string resultado = "NO SE PUEDE CREAR EL USUARIO";
             using (SqlConnection sqlConnection = new SqlConnection(ConnectionString))
             {
                 string queryInsert = "IF NOT EXISTS(SELECT * FROM Usuario " +
@@ -108,7 +108,7 @@ namespace IntegrandoApisConAdoNet.Repository
 
                     if (numberOfRows > 0)
                     {
-                        resultado = true;
+                        resultado = "SE CREO EL USUARIO CON EXITO";
                     }
                 }
 

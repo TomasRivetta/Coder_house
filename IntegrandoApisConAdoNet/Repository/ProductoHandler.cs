@@ -170,11 +170,7 @@ namespace IntegrandoApisConAdoNet.Repository
                 {
                     sqlCommand.Parameters.Add(idParameter);
                     int numberOfRows = sqlCommand.ExecuteNonQuery();
-                    if (numberOfRows > 0)
-                    {
-                        resultado = true;
-                    }
-
+                
                 }
 
                 sqlConnection.Close();

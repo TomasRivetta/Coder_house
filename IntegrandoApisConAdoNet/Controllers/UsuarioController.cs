@@ -52,7 +52,7 @@ namespace IntegrandoApisConAdoNet.Controllers
 
         //CREAR UN USUARIO
         [HttpPost]
-        public bool CrearUsuario([FromBody] PostUsuario usuario)
+        public string CrearUsuario([FromBody] PostUsuario usuario)
         {
             try
             {
@@ -71,7 +71,7 @@ namespace IntegrandoApisConAdoNet.Controllers
             catch (Exception ex)
             {
                 Console.WriteLine(ex.Message);
-                return false;
+                return "Error";
             }
         }
     }
